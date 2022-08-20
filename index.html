@@ -15,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
     />
 
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./css/responsiveslides.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
 
@@ -36,8 +39,41 @@
         </div>
       </div>
     </header>
-    <!-- CAROUSEL -->
-    <div class="carousel"></div>
+    <!-- SLIDER -->
+    <div class="slider">
+      <div class="slider__content">
+        <ul class="rslides">
+          <li>
+            <img src="./images/b1.jpg" alt="background-1" />
+            <div class="slide__info">
+              <h4>Lorem ipsum amet</h4>
+              <p>Lorem ipsum dolor sit, consectetur adiping elit.</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/b2.jpg" alt="background-2" />
+            <div class="slide__info">
+              <h4>Dolor sit hatant morbi</h4>
+              <p>Excepteur sint ocecat cupid proident, deserunt.</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/b3.jpg" alt="background-3" />
+            <div class="slide__info">
+              <h4>Quis autem ve eum iure</h4>
+              <p>Excepteur sint ocecat cupid proident, deserunt.</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/b4.jpg" alt="background-4" />
+            <div class="slide__info">
+              <h4>Voluptate velit esse</h4>
+              <p>Quis autem velreprehenderit qui ea.eum iure.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- ABOUT -->
     <div class="about"></div>
     <!-- STATS -->
@@ -55,5 +91,26 @@
     <!-- CONTACT -->
     <div class="contact"></div>
     <footer></footer>
+
+    <!-- JQUERY LIBRARY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- RESPONSIVE SLIDER JS -->
+    <script src="./js/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $(".rslides").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 1000,
+          prevText: "Previous",
+          nextText: "Next",
+        });
+      });
+    </script>
   </body>
 </html>
