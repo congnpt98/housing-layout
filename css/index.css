@@ -33,6 +33,18 @@ h2 {
   text-align: center;
 }
 
+.about,
+.stats-agileits,
+.contact,
+.subscribe,
+.event-more,
+.gallery,
+.team {
+  width: 94%;
+  margin: 0 auto;
+  padding: 70px 15px;
+}
+
 /* HEADER */
 header {
   background-color: rgba(25, 25, 25, 0.8);
@@ -180,6 +192,63 @@ header {
 }
 
 /* ABOUT */
+.about {
+  text-align: center;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about__item {
+  padding: 0 15px;
+}
+
+.about__item p {
+  line-height: 1.875rem;
+  margin-top: 0.75rem;
+  font-size: 15px;
+  color: #7f7777;
+}
+
+.about__item i {
+  font-size: 1.75rem;
+  color: black;
+  background: #fff;
+  border: 1px solid #7f7777;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  transition: all 0.5s;
+}
+
+.about__item i:hover {
+  color: #fff;
+  background: #00cdce;
+}
+
+.about__bottom {
+  margin-top: 0.75rem;
+}
+
+.about__bottom h4 {
+  color: #00cdce;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 3.375rem;
+}
+
+.about__bottom p {
+  margin-top: 5px;
+  color: black;
+  font-size: 15px;
+  line-height: 29px;
+}
+
 /* STATS */
 /* EVENT */
 /* PLAY */
