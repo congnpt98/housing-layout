@@ -36,8 +36,13 @@ h2 {
 /* HEADER */
 header {
   background-color: rgba(25, 25, 25, 0.8);
-  padding: 0.875rem;
+  padding: 5px 12px;
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .header__content {
@@ -84,8 +89,96 @@ header {
   color: #00cdce;
   border-bottom: 2px solid rgba(12, 11, 11, 0);
 }
+/* SLIDER */
+.slider__content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
 
-/* CAROUSEL */
+.slide__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.slide__info h4 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.slide__info p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d3d8d8;
+  line-height: 35px;
+}
+
+.rslides_nav {
+  position: absolute;
+  top: 48%;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-decoration: none;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.rslides_nav.prev {
+  left: 40px;
+  right: auto;
+  background: url(../images/left-arrow.png) no-repeat 0px 0px;
+}
+
+.rslides_nav.next {
+  right: 40px;
+  left: auto;
+  background: url(../images/right-arrow.png) no-repeat 0px 0px;
+}
+
+.rslides_tabs {
+  list-style: none;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  z-index: 10;
+  text-align: center;
+}
+
+.rslides_tabs li {
+  display: inline;
+  margin: 0 7px;
+}
+
+.rslides_tabs a {
+  visibility: hidden;
+}
+
+.rslides_tabs a::after {
+  content: "/f111";
+  font-size: 0;
+  visibility: visible;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+}
+
+.rslides_here a::after {
+  background: black;
+}
+
 /* ABOUT */
 /* STATS */
 /* EVENT */
