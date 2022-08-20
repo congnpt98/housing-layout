@@ -34,6 +34,57 @@ h2 {
 }
 
 /* HEADER */
+header {
+  background-color: rgba(25, 25, 25, 0.8);
+  padding: 0.875rem;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 3.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header__content span {
+  color: #00cdce;
+}
+
+.header__navbar {
+  margin-top: 6px;
+}
+
+.header__navbar ul {
+  list-style: none;
+}
+
+.header__navbar li {
+  display: inline;
+  margin: 0 16px;
+}
+
+.header__navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-bottom: 2px solid white;
+  line-height: 20px;
+  transition: all 0.5s;
+}
+
+.header__navbar a:hover {
+  color: #00cdce;
+  border-bottom: 2px solid rgba(12, 11, 11, 0);
+}
+
 /* CAROUSEL */
 /* ABOUT */
 /* STATS */
