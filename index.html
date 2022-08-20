@@ -115,7 +115,29 @@
       </div>
     </div>
     <!-- STATS -->
-    <div class="stats"></div>
+    <div class="stats">
+      <div class="stats__content">
+        <h2>Stats</h2>
+        <div class="stats__info">
+          <div class="stats__item">
+            <p class="counter">245</p>
+            <p>clients</p>
+          </div>
+          <div class="stats__item">
+            <p class="counter">46</p>
+            <p>Plans</p>
+          </div>
+          <div class="stats__item">
+            <p class="counter">71</p>
+            <p>projects</p>
+          </div>
+          <div class="stats__item">
+            <p class="counter">71</p>
+            <p>Likes</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- EVENT -->
     <div class="event"></div>
     <!-- PLAY -->
@@ -136,8 +158,15 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <!-- JQUERY WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <!-- RESPONSIVE SLIDER JS -->
     <script src="./js/responsiveslides.min.js"></script>
+    <!-- CountUp JS -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
     <script>
       $(function () {
         $(".rslides").responsiveSlides({
