@@ -8,6 +8,7 @@
 - [Counting-Up-To-Numberical-Values-On-Scroll](https://www.jqueryscript.net/other/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js.html)
 - [Responsive-Slider](http://responsiveslides.com/)
 - [Back-To-Top](https://codyhouse.co/gem/back-to-top/)
+- [Magnific-Popup](https://dimsemenov.com/plugins/magnific-popup/)
 
 ## Other library
 

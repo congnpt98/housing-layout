@@ -1,183 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONT AWSOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <!-- FONT GOOGLE -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" href="./css/responsiveslides.css" />
+  <!-- FONT AWSOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <!-- FONT GOOGLE -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" />
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
+  <!-- RESPONSIVE SLIDES CSS -->
+  <link rel="stylesheet" href="./css/responsiveslides.css" />
+  <!-- MAGNIFIC POPUP CSS -->
+  <link rel="stylesheet" href="./css/magnific-popup.css" />
+  <!-- LIGHT BOX CSS -->
+  <link rel="stylesheet" href="./css/lightbox.min.css" />
+  <!-- BACK TO TOP CSS  -->
+  <link rel="stylesheet" href="./css/backtotop.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/index.css" />
 
-    <title>Housing</title>
-  </head>
-  <body>
-    <header>
-      <div class="header__content">
-        <a class="header__logo" href="./index.html">Hous<span>ing</span></a>
-        <div class="header__navbar">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Agents</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+  <title>Housing</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__content">
+      <a class="header__logo" href="./index.html">Hous<span>ing</span></a>
+      <div class="header__navbar">
+        <ul id="main-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#event">Blog</a></li>
+          <li><a href="#gallery">Portfolio</a></li>
+          <li><a href="#team">Agents</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slider__content">
+      <ul class="rslides">
+        <li>
+          <img src="./images/b1.jpg" alt="background-1" />
+          <div class="slide__info">
+            <h4>Lorem ipsum amet</h4>
+            <p>Lorem ipsum dolor sit, consectetur adiping elit.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/b2.jpg" alt="background-2" />
+          <div class="slide__info">
+            <h4>Dolor sit hatant morbi</h4>
+            <p>Excepteur sint ocecat cupid proident, deserunt.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/b3.jpg" alt="background-3" />
+          <div class="slide__info">
+            <h4>Quis autem ve eum iure</h4>
+            <p>Excepteur sint ocecat cupid proident, deserunt.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/b4.jpg" alt="background-4" />
+          <div class="slide__info">
+            <h4>Voluptate velit esse</h4>
+            <p>Quis autem velreprehenderit qui ea.eum iure.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ABOUT -->
+  <div class="about" id="about">
+    <h2>About</h2>
+    <div class="about__content">
+      <div class="about__item">
+        <i class="fa fa-home"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="about__item">
+        <i class="fa fa-key"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="about__item">
+        <i class="fa fa-money-bill-alt"></i>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div class="about__bottom">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
+        odio consequat, tristique elit sed, molestie nulla. Mauris et quam
+        leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit
+        sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse
+        tincidunt ut velit id euismod.vulputate turpis porta ex sodales,
+        dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus
+        congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+        quis
+      </p>
+    </div>
+  </div>
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats__content">
+      <h2>Stats</h2>
+      <div class="stats__info">
+        <div class="stats__item">
+          <p class="counter">245</p>
+          <p>clients</p>
+        </div>
+        <div class="stats__item">
+          <p class="counter">46</p>
+          <p>Plans</p>
+        </div>
+        <div class="stats__item">
+          <p class="counter">71</p>
+          <p>projects</p>
+        </div>
+        <div class="stats__item">
+          <p class="counter">71</p>
+          <p>Likes</p>
         </div>
       </div>
-    </header>
-    <!-- SLIDER -->
-    <div class="slider">
-      <div class="slider__content">
-        <ul class="rslides">
-          <li>
-            <img src="./images/b1.jpg" alt="background-1" />
-            <div class="slide__info">
-              <h4>Lorem ipsum amet</h4>
-              <p>Lorem ipsum dolor sit, consectetur adiping elit.</p>
+    </div>
+  </div>
+  <!-- EVENT -->
+  <div class="event" id="event">
+    <h2>Blog</h2>
+    <div class="event__content">
+      <div class="event__item">
+        <div class="event__wrapper">
+          <img src="./images/g1.jpg" alt="event-image-1" />
+          <div class="event__infor">
+            <h3>Lorem Ipsum Passage</h3>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <div class="event__button">
+              <a class="read-more" href="#read-more-popup">Read more...</a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="event__item">
+        <div class="event__wrapper">
+          <img src="./images/g2.jpg" alt="event-image-2" />
+          <div class="event__infor">
+            <h3>Lorem Ipsum Passage</h3>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <div class="event__button">
+              <a class="read-more" href="#read-more-popup">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="event__item">
+        <div class="event__wrapper">
+          <img src="./images/g1.jpg" alt="event-image-3" />
+          <div class="event__infor">
+            <h3>Lorem Ipsum Passage</h3>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <div class="event__button">
+              <a class="read-more" href="#read-more-popup">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="read-more-popup" class="mfp-hide white-popup modal__content">
+    <div class="modal__header">Housing</div>
+    <div class="modal__body">
+      <img src="./images/img2.jpg" alt="popup-images" />
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur.
+      </p>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close modal__close">
+      x
+    </button>
+  </div>
+  <!-- PLAY -->
+  <div class="play">
+    <div class="play__banner">
+      <div class="play__button">
+        <a href="#video-popup" class="play-icon" aria-label="Open popup video"><i class="fa fa-play-circle"></i></a>
+      </div>
+    </div>
+    <div id="video-popup" class="mfp-hide white-popup modal__content">
+      <iframe src="https://player.vimeo.com/video/106770833"></iframe>
+    </div>
+    <div class="play__info">
+      <h3>Get More..</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut minim veniam, labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi esse quam nihil molestiae consequatur, vel illum qui
+        dolorem eum fugiat quo voluptas nulla pariatur.
+      </p>
+      <div class="play__button--botom">
+        <a class="read-more" href="#read-more-popup">Read more...</a>
+      </div>
+    </div>
+  </div>
+  <!-- GALLERY -->
+  <div class="gallery" id="gallery">
+    <h2>Portfolio</h2>
+    <div class="gallery__content">
+      <div class="galerry__item">
+        <a href="./images/img1.jpg" data-lightbox="gallery">
+          <img src="./images/img1.jpg" alt="image-1" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="galerry__item">
+        <a href="./images/img2.jpg" data-lightbox="gallery">
+          <img src="./images/img2.jpg" alt="image-2" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="galerry__item">
+        <a href="./images/img3.jpg" data-lightbox="gallery">
+          <img src="./images/img3.jpg" alt="image-3" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="galerry__item">
+        <a href="./images/img4.jpg" data-lightbox="gallery">
+          <img src="./images/img4.jpg" alt="image-4" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="galerry__item">
+        <a href="./images/img5.jpg" data-lightbox="gallery">
+          <img src="./images/img5.jpg" alt="image-5" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="galerry__item">
+        <a href="./images/img6.jpg" data-lightbox="gallery">
+          <img src="./images/img6.jpg" alt="image-6" />
+          <div class="gallery__wrapper">
+            <div class="gallery__info">
+              <h3>GALLERY</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- SUBSCRIBE -->
+  <div class="subscribe">
+    <h2>Subscribe</h2>
+    <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi</p>
+    <form action=#">
+      <input type="email" name="email" method="post" placeholder="Email" required>
+      <div class="subscribe__button">
+        <button>Click</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <!-- TEAM -->
+  <div class="team" id="team">
+    <h2>Our Angents</h2>
+    <div class="team__content">
+      <div class="team__wrapper">
+        <div class="team__item">
+          <img src="./images/t1.jpg" alt="team-1">
+          <div class="team__info">
+            <h4>KAT WALLY</h4>
+            <p>Lorem, ipsum.</p>
+            <ul>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa fa-rss"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="team__wrapper">
+        <div class="team__item">
+          <img src="./images/t4.jpg" alt="team-4">
+          <div class="team__info">
+            <h4>JOHN MAX</h4>
+            <p>Lorem, ipsum.</p>
+            <ul>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa fa-rss"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="team__wrapper">
+        <div class="team__item">
+          <img src="./images/t2.jpg" alt="team-2">
+          <div class="team__info">
+            <h4>ROY KENT</h4>
+            <p>Lorem, ipsum.</p>
+            <ul>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa fa-rss"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="team__wrapper">
+        <div class="team__item">
+          <img src="./images/t3.jpg" alt="team-3">
+          <div class="team__info">
+            <h4>JOY IDSON</h4>
+            <p>Lorem, ipsum.</p>
+            <ul>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa fa-rss"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- CONTACT -->
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3745.657945920633!2d94.925709!3d20.148312999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b7d19881308ae9%3A0x229dbaae31b864b9!2sZarmani!5e0!3m2!1sen!2sin!4v1419654909172"></iframe>
+  </div>
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact__content">
+      <form action="#">
+        <div class="contact__content--left">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="last name" placeholder="Last Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="phone" placeholder="Phone" required>
+        </div>
+        <div class="contact__content--right">
+          <textarea name="message" placeholder="Message" required></textarea>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footer__content">
+      <p> &copy; 2017 Housing. All Rights Reserved &#8739; Design by <a href="https://w3layouts.com/" target="_blank">W3layouts</a></p>
+      <div class="footer__social">
+        <ul>
+          <li>
+            <i class="fab fa-facebook-f"></i>
           </li>
           <li>
-            <img src="./images/b2.jpg" alt="background-2" />
-            <div class="slide__info">
-              <h4>Dolor sit hatant morbi</h4>
-              <p>Excepteur sint ocecat cupid proident, deserunt.</p>
-            </div>
+            <i class="fab fa-twitter"></i>
           </li>
           <li>
-            <img src="./images/b3.jpg" alt="background-3" />
-            <div class="slide__info">
-              <h4>Quis autem ve eum iure</h4>
-              <p>Excepteur sint ocecat cupid proident, deserunt.</p>
-            </div>
+            <i class="fa fa-rss"></i>
           </li>
-          <li>
-            <img src="./images/b4.jpg" alt="background-4" />
-            <div class="slide__info">
-              <h4>Voluptate velit esse</h4>
-              <p>Quis autem velreprehenderit qui ea.eum iure.</p>
-            </div>
+          <li> 
+            <i class="fab fa-vk"></i>
           </li>
         </ul>
       </div>
     </div>
-    <!-- ABOUT -->
-    <div class="about">
-      <h2>About</h2>
-      <div class="about__content">
-        <div class="about__item">
-          <i class="fa fa-home"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="about__item">
-          <i class="fa fa-key"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="about__item">
-          <i class="fa fa-money-bill-alt"></i>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div class="about__bottom">
-        <h4>About us</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
-          odio consequat, tristique elit sed, molestie nulla. Mauris et quam
-          leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit
-          sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse
-          tincidunt ut velit id euismod.vulputate turpis porta ex sodales,
-          dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus
-          congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          quis
-        </p>
-      </div>
-    </div>
-    <!-- STATS -->
-    <div class="stats">
-      <div class="stats__content">
-        <h2>Stats</h2>
-        <div class="stats__info">
-          <div class="stats__item">
-            <p class="counter">245</p>
-            <p>clients</p>
-          </div>
-          <div class="stats__item">
-            <p class="counter">46</p>
-            <p>Plans</p>
-          </div>
-          <div class="stats__item">
-            <p class="counter">71</p>
-            <p>projects</p>
-          </div>
-          <div class="stats__item">
-            <p class="counter">71</p>
-            <p>Likes</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- EVENT -->
-    <div class="event"></div>
-    <!-- PLAY -->
-    <div class="play"></div>
-    <!-- GALLERY -->
-    <div class="gallery"></div>
-    <!-- SUBSCRIBE -->
-    <div class="subscribe"></div>
-    <!-- TEAM -->
-    <div class="team"></div>
-    <!-- CONTACT -->
-    <div class="contact"></div>
-    <footer></footer>
-
-    <!-- JQUERY LIBRARY -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <!-- JQUERY WAYPOINTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <!-- RESPONSIVE SLIDER JS -->
-    <script src="./js/responsiveslides.min.js"></script>
-    <!-- CountUp JS -->
-    <script src="./js/jquery.countup.min.js"></script>
-    <script>
-      $(".counter").countUp();
-    </script>
-    <script>
-      $(function () {
-        $(".rslides").responsiveSlides({
-          auto: true,
-          pager: true,
-          nav: true,
-          speed: 1000,
-          prevText: "Previous",
-          nextText: "Next",
-        });
+  </footer>
+  <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  <!-- JQUERY LIBRARY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- JQUERY WAYPOINTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <!-- RESPONSIVE SLIDER JS -->
+  <script src="./js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 1000,
+        prevText: "Previous",
+        nextText: "Next",
       });
+    });
+  </script>
+  <!-- COUNT UP JS -->
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>
+    $(".counter").countUp();
+  </script>
+  <!-- MAGNIFIC POPUP JS -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(".read-more").magnificPopup({
+      type: "inline",
+      midClick: true,
+    });
+    $(".play-icon").magnificPopup({
+      type: "inline",
+      midClick: true,
+    });
+  </script>
+  <!-- LIGHT SPEED BOX JS -->
+  <script src="./js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      alwaysShowNavOnTouchDevices: true,
+    });
+  </script>
+
+  <!-- BACK TO TOP JS  -->
+  <script src="./js/back-to-top.js"></script>
+  <script src="./js/util.js"></script>
+
+   <!-- NAVIGATION BAR JS -->
+    <script>
+      var mainNav = document.getElementById("main-nav");
+      var listNav = mainNav.getElementsByTagName("li");
+      for (var i = 0; i < listNav.length; i++) {
+        listNav[i].addEventListener("click", function () {
+          var current = document.querySelector("#main-nav .active");
+          current.className = current.className.replace("active", "");
+          this.className += "active";
+        });
+      }
     </script>
-  </body>
+
+</body>
+
 </html>
