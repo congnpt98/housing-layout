@@ -65,7 +65,7 @@ h2 {
 
 .backToTop {
   background-image: url(../images/arrowup.png);
-  background-color:unset;
+  background-color: unset;
   box-shadow: none;
   text-decoration: none;
   position: fixed;
@@ -142,11 +142,10 @@ header {
   border-bottom: 2px solid rgba(12, 11, 11, 0);
 }
 
-.header__navbar li.active a{
+.header__navbar li.active a {
   color: #00cdce;
   border-bottom: 2px solid rgba(12, 11, 11, 0);
 }
-
 
 /* SLIDER */
 .slider__content {
@@ -192,16 +191,20 @@ header {
   z-index: 3;
 }
 
+.rslides_nav:active {
+  opacity: 1;
+}
+
 .rslides_nav.prev {
   left: 40px;
   right: auto;
-  background: url(../images/left-arrow.png) no-repeat 0px 0px;
+  background: url(../images/prev.png) no-repeat 0px 0px;
 }
 
 .rslides_nav.next {
   right: 40px;
   left: auto;
-  background: url(../images/right-arrow.png) no-repeat 0px 0px;
+  background: url(../images/next.png) no-repeat 0px 0px;
 }
 
 .rslides_tabs {
